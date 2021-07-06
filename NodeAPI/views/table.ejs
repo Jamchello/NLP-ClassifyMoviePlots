@@ -1,0 +1,17 @@
+<table class="table">
+    <tr>
+        <th>Prediction</th>
+        <th>Plot</th>
+    </tr>
+    <%if (items.length >0){ %>
+    <% items.forEach(function(row) { %>
+    <tr>
+        <td><%= row.Prediction %></td>
+        <td><%= row.Plot %></td>
+    </tr>
+    <% })}else{ %>
+    <tr>
+        <td colspan="6">No Record Found</td>        
+    </tr>
+    <% } %>
+  </table>
